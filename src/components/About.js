@@ -15,7 +15,7 @@ const About = (props) => {
         <h1>
           {" "}
           This website is about all things Media!!! you can purchase a song or
-          watch your faviourtie tv shows.{" "}
+          watch your favourite tv shows.{" "}
         </h1>
       </div>
     </div>

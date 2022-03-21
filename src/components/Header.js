@@ -7,7 +7,7 @@ const Header = (props) => {
       <h1>Media Store</h1>
       <div className="breadcrumb">
         <Link to="/"> Home </Link> |<Link to="/about"> About </Link> |
-        <Link to="/basket" className="">
+        <Link to="/basket" className="basket">
           basket
         </Link>
       </div>

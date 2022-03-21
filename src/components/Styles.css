@@ -1,6 +1,7 @@
-.App {
+.App  {
   font-family: sans-serif;
   text-align: center;
+  background-color: beige;
 }
 * {
   box-sizing: border-box;
@@ -11,6 +12,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
+
+.page{
+  background-color:white;
+  text-align: center;
+}
+
+
 a {
   color: #333;
   text-decoration: none;
@@ -21,6 +29,8 @@ a {
 .header h1,
 .header .breadcrumb {
   text-align: center;
+  font-weight: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .product {
@@ -28,9 +38,11 @@ a {
   margin-bottom: 15px;
   border-bottom: 1px solid rgb(209, 209, 209);
 }
-.image .product,
-.page,
-.list {
+.image,
+.product,
+.track,
+.song,
+.price {
   padding: 5px 10px;
 }
 .product div {
@@ -42,6 +54,13 @@ a {
 .product .author {
   color: rgb(90, 90, 90);
   font-weight: bold;
+}
+
+.product .song {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .product .price {
   font-size: 1.2em;
@@ -56,13 +75,36 @@ a {
   border-radius: 5px;
   min-width: 80px;
   color: #fff;
-  float: right;
+  float: ;
   font-size: 1.1em;
 }
-.product .add-button {
+.product button {
   background-color: rgb(79, 149, 255);
+  padding: 10px 15px;
+  border: 0px;
+  border-radius: 20px;
+  color: #fff;
+  float: center;
 }
-.product .remove-button {
+
+.remove-button button {
+  background-color: rgb(255, 79, 79);
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 20px;
+  color: #fff;
+  float: center ;
+}
+.searchBar button {
+  background-color: rgb(55, 74, 102);
+  padding: 16px 20px;
+  border: 0px;
+  border-radius: 20px;
+  color: #fff;
+  float: center;
+  margin: 10px
+}
+/* .product .button {
   padding: 10px 15px;
   border: 0px;
   border-radius: 20px;
@@ -72,7 +114,7 @@ a {
   background-color: #bd1515;
   font-weight: bold;
   font-size: 1.2em;
-}
+} */
 
 .searchBar {
   text-align: center;
@@ -98,3 +140,4 @@ a {
   width: 15%;
   margin-right: 5px;
 }
+

@@ -18,7 +18,7 @@ const Basket = (props) => {
     <div>
       <Header />
       {items.length > 0 && (
-        <div>
+        <div className="baskey">
           <BasketCount total={items.length} />
           <BasketTotal items={props.basket} />
         </div>
@@ -26,17 +26,18 @@ const Basket = (props) => {
 
       {items.length > 0 ? (
         props.basket.map((item) => (
-          <div>
+          <div className="cart">
             {/* {console.log("item", item)} */}
             <h2>{item.artistName}</h2>
             <p>{item.trackName}</p>
             <p>{item.trackPrice}</p>
             <img src={item.artworkUrl100} alt="thumbnail" />
             <p>{item.longDescription}</p>
-
-            <button onClick={() => props.removeFromBasket(item.trackId)}>
-              remove from basket
-            </button>
+            <div className="remove-button">
+              <button onClick={() => props.removeFromBasket(item.trackId)}>
+                remove from basket
+              </button>
+            </div>
           </div>
         ))
       ) : (
@@ -47,3 +48,4 @@ const Basket = (props) => {
 };
 
 export default Basket;
+
